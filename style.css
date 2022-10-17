@@ -423,7 +423,6 @@ form{
     overflow: scroll;
     gap: 16px;
     padding-right: 16px;
-
 }
 
 .cierre article{
@@ -674,7 +673,14 @@ justify-content: space-between;
 /*--fin portfolio--*/
 
 @media screen and (min-width:480px) {
-    .menu__small{
+    .portfolio_grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 300px);
+    }
+}
+
+@media screen and (max-width:719px) {
+    .menu__main,hr.linea{
         display:none;
     }
 }
@@ -683,10 +689,21 @@ justify-content: space-between;
     .menu__small{
         display:none;
     }
-}
+    .portfolio_grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 300px);
+    }
 
-@media screen and (max-width:721px) {
-    .menu__main,hr.linea{
-        display:none;
+    .c2{
+        width: calc(50% - 32px);
+    }
+
+    .cierre article{
+        flex-direction: row;
+        gap: 16px;
+    }
+    #final{
+        flex-direction: column;
+        height: 500px;
     }
 }
