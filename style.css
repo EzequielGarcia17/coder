@@ -119,6 +119,8 @@ h6{
     margin: 0 auto;
     justify-content: center;
     padding: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .flex{
@@ -287,6 +289,7 @@ footer img{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(12, 300px);
     gap: 8px;
+    margin-top: 24px;
 }
 
 .newjob{
@@ -396,7 +399,8 @@ textarea.casillas{
 form{
     display: block;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    width: calc(100% - 12px);
 }
 
 .enviar{
@@ -407,6 +411,7 @@ form{
 .c2{
     width: calc (100%-32px);
     height: auto;
+    margin-bottom: 40px;
 }
 
 #final{
@@ -449,6 +454,7 @@ form{
     background: url(assets/tangente_estudio_diseño_design.png);
     background-position: bottom right;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /*--card--*/
@@ -469,10 +475,6 @@ form{
     box-shadow: 10px 10px 0px #00A18F;
 }
 
-.card__grisO{
-    background-color: #3C3C3B;
-   
-}
 .card__grisC{
     background-color: #818180;
 }
@@ -608,8 +610,6 @@ justify-content: space-between;
     margin-bottom: 160px;
     margin-top: -160px;
 }
-
-
 .corto{
     width: 60%;
     margin: 0 auto;
@@ -633,8 +633,6 @@ justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
 }
-
-
 .portfolio img{
     width: calc(25% - 20px);
     height: auto;
@@ -665,7 +663,6 @@ justify-content: space-between;
     padding: 10px 20px 10px 20px;
     border-radius: 16px;
 }
-
 .titulo_port h3{
     margin: 0px;
     margin-left: 20px;
@@ -673,6 +670,7 @@ justify-content: space-between;
 .port_space{
     padding-top: 160px;
 }
+
 /*--fin portfolio--*/
 
 @media screen and (min-width:480px) {
