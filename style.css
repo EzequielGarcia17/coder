@@ -3,8 +3,6 @@
 
 *{
     font-family: 'Fira Sans', sans-serif;
-   /*-- box-sizing: border-box;--*/
-   /*-- letter-spacing:20px--*/
     margin-block-start: 0px;
     margin-block-end: 0px;
     margin-inline-start: 0px;
@@ -24,15 +22,15 @@ body{
 }
 
 .verde{
-    color: #00A18F;
+    color: #00A18F!important;
 }
 
 .beige{
-    color:  #FFF8E1;
+    color:  #FFF8E1!important;
 }
 
 .gris{
-    color:  #3C3C3B;
+    color:  #3C3C3B!important;
 }
 
 .left{
@@ -58,8 +56,8 @@ h3{
 
 
 h4{
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 20px!important;
+    font-weight: 200!important;
 
 }
 
@@ -74,14 +72,15 @@ h6{
     font-weight: 200;
 }
 
+
 .buttons{
     color:#FFF8E1;
-    min-width: 220px;
-    height: 48px;
+    min-width: 180px;
+    height: 36px;
     border-radius: 8px;
-    line-height: 48px;
+    line-height: 36px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     transition: 300ms ease-in-out;
 }
 
@@ -115,12 +114,12 @@ h6{
     margin: 0 auto;
 }
 .sec{
-    max-width: 1600px;
     margin: 0 auto;
+    width: auto;
+    max-width: 1600px;
     justify-content: center;
-    padding: 16px;
-    margin-top: 40px;
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .flex{
@@ -138,104 +137,81 @@ i:hover{
 }
 
 /*--header--*/
-.cabezera{
+.pershead{
     background-color: rgba(255,255,255,0.8);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items:center;
-    align-content: center;
-    justify-content: space-between;
     padding: 20px 30px 20px 30px;
-    height: 70px;
+    height: auto;
     position: fixed;
-    width: calc (100%-40px);
+    width:100%;
     z-index: 999;
-    right: 0;
     left: 0;
     top: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .logo{
     max-width: 100px;
 }
+#navbarNav{
+    justify-content: end;
+}
 
 nav{
-width: 90%;
+    width: 100%;
+    height: auto;
 }
 
-
-.menu__small li{
-    position: relative;
+.underline:hover, .active{
+    text-decoration: 3px underline;
+    text-underline-offset: 8px;
+    font-weight: 800;
 }
-
-.menu__submenu{
-    position: absolute;
-    display: none;
-    right: 0px;
-}
-
-.menu__submenu li{
-    display: block;
-    
-}
-
-.menu__submenu li a{
-   text-align: right!important;
-  
-}
-
-.menu__small li:hover ul{
-    display: block;
-}
-
-.menu__hamb{
-    font-size: 40px;
-}
-
-.menu__item a{
-   font-size: 22px;
-   font-weight: 500;
-   text-decoration: none;
-   color:#00A18F;
-}
-
-.menu__item:hover a {
-    border-bottom: 4px solid #00A18F;
-    font-weight: 200;
-    transition: 300ms;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-
 .linea{
-    height: 3px;
-    background-color: #00A18F;
-    border: none;
+border-bottom: 2px solid #00A18F;
+padding-bottom: 8px;
 }
+.hamb{
+    font-size: 30px;
+}
+
 
 #cabezera{
-    height: 50vh;
+    height: 30vh;
     background-image: url(assets/tangente_estudio_diseño_design_banckground_mis1.jpg);
     background-position: bottom;
     background-size: cover;
     box-shadow: 0px 10px 20px #4E3E78;
     margin-bottom: 100px;
 }
+
+.navbar{
+    max-width: 1600px;
+
+}
 /*--footer--*/
 footer{
     background-color: #00A18F;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
     align-items: center;
     padding: 16px 16px 16px 16px;
     box-shadow: 0px -10px 10px #4E3E78;
 }
+footer div{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+}
 
-footer img{
-    width: 55px;
+footer div img{
+    width: 45px;
+}
+
+.social{
+    gap: 4px;
+    margin-right: 16px;
 }
 
 .social a{
@@ -252,7 +228,7 @@ footer img{
 /*--fin-header--*/
 
 #inicio{
-    height:calc(100vh - 80px);
+    height:calc(100vh);
     background: url(assets/Frame\ 4.png);
     background-size:cover;
     display: flex;
@@ -324,10 +300,10 @@ transform: scale(105%);
 
 /*--iconos-*/
 .icon{
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
-    line-height: 36px;
-    width: 36px;
+    line-height: 32px;
+    width: 32px;
     border-radius: 50%;
     box-shadow: 0px 4px 4px #3C3C3B;
     margin-left: 4px;
@@ -363,7 +339,7 @@ transform: scale(105%);
 /*--iconos-*/
 
 .casillas{
-    width: 99.5%;
+    width: 100%;
     background-color: #818180;
     border-radius: 4px;
     border: solid #00A18F;
@@ -411,7 +387,7 @@ form{
     height: 100%;
     overflow: scroll;
     gap: 16px;
-    padding-right: 16px;
+    padding-right: 10px;
 }
 
 .cierre article{
@@ -421,13 +397,23 @@ form{
 }
 
 .up{
-    transform: scale(1.5);
+    font-size: 32px!important;
     display: inline-block;
     position: fixed;
-    right: 16px;
-    bottom: 140px;
+    right: 24px;
+    bottom: 80px;
     z-index: 8;
     font-size: 30px;
+    transition: 300ms;
+}
+
+.up:hover{
+    transform: scale(125%);
+    transition: 300ms;
+}
+
+.up:hover a i{
+    color: #00A18F!important;
 }
 
 .cierre{
@@ -442,15 +428,16 @@ form{
     background: url(assets/tangente_estudio_diseño_design.png);
     background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
 }
 
 /*--card--*/
 .card{
     border-radius: 16px!important;
-    max-width: 356px;
+    width: 100%!important;
+    max-width: 346px;
     height: auto;
-    display: grid;
+    display: grid!important;
     grid-template-columns: 66px 180px;
     grid-template-rows: 0.4fr 1fr 0.1fr;
     grid-template-areas: 
@@ -466,7 +453,7 @@ form{
 
 
 .card h4{
-    grid-area: empresa;
+    grid-area: empresa!important;
     height: auto;
     color: #FFF8E1;
     align-self: center;
@@ -479,6 +466,8 @@ form{
     height: auto;
     text-align: right;
     color: #FFF8E1;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 .card h6{
@@ -501,37 +490,46 @@ form{
 /*--fin_card--*/
 
 /*--quienesomos--*/
-#quienesomos article{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 200px;
+#quienesomos{
+    margin-bottom: 80px;
+    width: 90%;
 }
 
-#quienesomos article h3{
-    display: inline-block;
+#quienesomos h2{
+    margin-bottom: 60px;
+}
+#quienesomos div img{
+    box-shadow: -16px 16px 0px #00A18F;
     width: 60%;
-}
-
-#quienesomos article img{
-    box-shadow: -24px 24px 0px #00A18F;
-    width: 50%;
     max-width: 500px;
     height:max-content;
-    align-self: center;
+    padding: 0px;
+    margin-left: 32px;
+    margin-top: 16px;
+    float: right;
+}
+
+#textoquienes{
+    margin-right: 32px;
 }
 
 .trio{
-    padding-bottom: 200px;
+    padding-bottom: 80px;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     gap: 20px;
-
+    width: 100%;
 }
 
 .perfil{
-    width: 30%;
+    width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
    
 }   
 
@@ -548,10 +546,11 @@ form{
 .perfil img{
     width: 100%;
     height:auto;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 300px;
+    max-height: 300px;
     margin-bottom: 10px;
     border-radius: 100%;
+    display: inline-block;
 }
 
 /*--fin quienesomos--*/
@@ -663,11 +662,11 @@ justify-content: space-between;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 300px);
     }
+    .cierre__fondo{
+        background-size: 75%;
+    }
 }
 
-@media screen and (max-width:719px) {
- 
-}
 
 @media screen and (min-width:720px) {
 
@@ -688,5 +687,8 @@ justify-content: space-between;
     #final{
         flex-direction: column;
         height: 500px;
+    }
+    .cierre__fondo{
+        background-size: 50%;
     }
 }
