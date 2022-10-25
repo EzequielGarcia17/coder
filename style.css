@@ -178,7 +178,7 @@ padding-bottom: 8px;
 
 #cabezera{
     height: 30vh;
-    background-image: url(assets/tangente_estudio_diseño_design_banckground_mis1.jpg);
+    background-image: url(assets/tangente_estudio_dise&ntildeo_design_banckground_mis1.jpg);
     background-position: bottom;
     background-size: cover;
     box-shadow: 0px 10px 20px #4E3E78;
@@ -425,7 +425,7 @@ form{
 }
 
 .cierre__fondo{
-    background: url(assets/tangente_estudio_diseño_design.png);
+    background: url(assets/tangente_estudio_dise&ntildeo_design.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -686,9 +686,10 @@ justify-content: space-between;
     
     #final{
         flex-direction: column;
-        height: 500px;
+        height: 520px;
     }
     .cierre__fondo{
         background-size: 50%;
     }
 }
+
