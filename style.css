@@ -58,6 +58,14 @@ body {
   color: #3C3C3B !important;
 }
 
+.violeta {
+  color: #4E3E78 !important;
+}
+
+.blanco {
+  color: #fff !important;
+}
+
 /*--Fin-Colores--*/
 /*--Textos--*/
 .left {
@@ -233,7 +241,7 @@ footer div img {
 /*--fin-footer--*/
 #inicio {
   height: 100vh;
-  background: url(assets/Frame\ 4.png);
+  background: url(assets/estudio_tangente_design_background_inicio.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -247,13 +255,14 @@ footer div img {
 #inicio h3 {
   width: 90%;
   margin-bottom: 16px;
+  text-shadow: 2px 2px 4px #00A18F;
 }
 
 /*--ultimos-trabajos-*/
 .portfolio_grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(12, 300px);
+  grid-template-rows: repeat(9, 400px);
   gap: 8px;
   margin-top: 24px;
 }
@@ -263,7 +272,7 @@ footer div img {
   transition: 100ms ease-in-out;
   position: relative;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
 }
 
@@ -279,7 +288,7 @@ footer div img {
 
 .portfolio__text {
   width: 100%;
-  background-color: rgba(255, 248, 225, 0.862745098);
+  background-color: #FFF8E1;
   position: absolute;
   bottom: 0;
   line-height: 50px;
@@ -287,8 +296,40 @@ footer div img {
   transition: 100ms ease-in-out;
 }
 
-.newjobs12, .newjobs11, .newjobs10, .newjobs9, .newjobs8, .newjobs7, .newjobs6, .newjobs5, .newjobs4, .newjobs3, .newjobs2, .newjobs1 {
-  background-image: url(assets/facebook_post_tangente_comida_l.jpg);
+.newjobs9 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_9.jpg);
+}
+
+.newjobs8 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_8.jpg);
+}
+
+.newjobs7 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_7.jpg);
+}
+
+.newjobs6 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_6.jpg);
+}
+
+.newjobs5 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_5.jpg);
+}
+
+.newjobs4 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_4.jpg);
+}
+
+.newjobs3 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_3.jpg);
+}
+
+.newjobs2 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_2.jpg);
+}
+
+.newjobs1 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_1.jpg);
 }
 
 /*--fin-ultimos-trabajos-*/
@@ -685,10 +726,6 @@ form {
 
 /*--fin portfolio--*/
 @media screen and (min-width: 480px) {
-  .portfolio_grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 300px);
-  }
   .cierre__fondo {
     background-size: 75%;
   }
@@ -699,7 +736,7 @@ form {
 @media screen and (min-width: 720px) {
   .portfolio_grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-rows: repeat(3, 400px);
   }
   .c2 {
     width: calc(50% - 32px);
