@@ -434,12 +434,6 @@ form {
   padding-right: 10px;
 }
 
-.cierre article {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .up {
   font-size: 32px !important;
   display: inline-block;
@@ -466,6 +460,11 @@ form {
   padding: 0px;
   padding-bottom: 160px;
 }
+.cierre article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
 .cierre__fondo {
   background: url(assets/tangente_estudio_dise&ntildeo_design.png);
@@ -491,7 +490,6 @@ form {
   box-shadow: 10px 10px 0px #00A18F;
   background-color: #818180 !important;
 }
-
 .card h4 {
   grid-area: empresa !important;
   height: auto;
@@ -499,7 +497,6 @@ form {
   align-self: center;
   margin-left: 16px;
 }
-
 .card h5 {
   grid-area: nombre;
   height: auto;
@@ -508,7 +505,6 @@ form {
   padding-right: 10px;
   padding-top: 10px;
 }
-
 .card h6 {
   grid-area: comentario;
   padding: 0px;
@@ -516,7 +512,6 @@ form {
   height: auto;
   font-style: italic;
 }
-
 .card img {
   grid-area: logoCliente;
   background-color: #FFF8E1;
@@ -714,6 +709,7 @@ form {
   width: fit-content;
   padding: 10px 20px 10px 20px;
   border-radius: 16px;
+  margin-bottom: 16px;
 }
 .titulo_port h3 {
   margin: 0px;
@@ -726,6 +722,19 @@ form {
 
 .altu {
   max-height: 800px;
+}
+
+.carousel-caption {
+  background-color: rgba(60, 60, 59, 0.5);
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 32px;
+}
+
+.carousel-inner {
+  border-radius: 16px;
 }
 
 /*--fin portfolio--*/

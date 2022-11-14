@@ -427,12 +427,6 @@ form{
     padding-right: 10px;
 }
 
-.cierre article{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .up{
     font-size: 32px!important;
     display: inline-block;
@@ -458,6 +452,11 @@ form{
     margin: 0px;
     padding: 0px;
     padding-bottom:160px ;
+    article{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 .cierre__fondo{
@@ -486,44 +485,40 @@ form{
     margin-bottom: 40px;
     box-shadow: 10px 10px 0px $verde;
     background-color: #818180!important;
+    h4{
+        grid-area: empresa!important;
+        height: auto;
+        color: $biege;
+        align-self: center;
+        margin-left: 16px;
+    
+    }
+    h5{
+        grid-area: nombre;
+        height: auto;
+        text-align: right;
+        color: $biege;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    h6{
+        grid-area: comentario;
+        padding: 0px;
+        margin: 0px;
+        height: auto;
+        font-style: italic;
+    }
+    img{
+        grid-area: logoCliente;
+        background-color:$biege;
+        border-radius: 50%;
+        width: 66px;
+        height: 66px;
+        margin-right: 16px;
+        margin-bottom: 8px;
+    }
 }
 
-
-.card h4{
-    grid-area: empresa!important;
-    height: auto;
-    color: $biege;
-    align-self: center;
-    margin-left: 16px;
-
-}
-
-.card h5{
-    grid-area: nombre;
-    height: auto;
-    text-align: right;
-    color: $biege;
-    padding-right: 10px;
-    padding-top: 10px;
-}
-
-.card h6{
-    grid-area: comentario;
-    padding: 0px;
-    margin: 0px;
-    height: auto;
-    font-style: italic;
-}
-
-.card img{
-    grid-area: logoCliente;
-    background-color:$biege;
-    border-radius: 50%;
-    width: 66px;
-    height: 66px;
-    margin-right: 16px;
-    margin-bottom: 8px;
-}
 /*--fin_card--*/
 
 /*--quienesomos--*/
@@ -710,6 +705,7 @@ justify-content: space-between;
     width: fit-content;
     padding: 10px 20px 10px 20px;
     border-radius: 16px;
+    margin-bottom: 16px;
         h3{
             margin: 0px;
             margin-left: 20px;
@@ -721,6 +717,18 @@ justify-content: space-between;
 
 .altu{
     max-height: 800px;
+}
+
+.carousel-caption{
+    background-color: rgba($gris, $alpha: 0.5);
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 32px;
+}
+.carousel-inner{
+    border-radius: 16px;
 }
 
 /*--fin portfolio--*/
