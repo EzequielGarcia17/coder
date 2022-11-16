@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="shorcut icon" type="image/x-icon" href="../assets/tangente_favicon.ico">
+    <!-- metas -->
     <title>Quienes Somos</title>
     <meta name="description" content="Estudio de diseño gráfico, diseño web, marketing digital, identidad corporativa e ilustración en Buenos Aires, Argentina">
     <meta name="subject" content="Diseño gráfico en todas sus variantes" />
@@ -19,16 +20,19 @@
     <meta name="geo.position" content="-34.587401;-58.428726" />
     <meta name="ICBM" content="-34.587401, -58.428726" />
     <meta name="keywords" content="tangente diseño, tangente diseno, tangentediseño, tangentediseno, estudio de diseño, diseño grafico, diseño web, marketing online, animacion, estudio de diseño grafico, estudio de diseño web, estudio de animacion, Buenos Aires, Argentina, Cintia Olave, Belen Santis, Gisela Drezek, Johanna Gonzalez, Fererico Ulicki, Ezequiel Garcia, diseñador, diseño, bienal, diseño grafico, comunicación visual, impresiones, imprenta, packaging, gigantografias, publicidad, agencia, via publica, estampados, ploteos, flyer, flyers, flayer, flayers, volantes, editorial, web, hosting,  diseño, design, impresiones, eventos, promociones, marketing, comunicacion estrategica, digital, marketing digital, imagen corporativa, diseño integral, comunicacion, compañía, pop, point of purchase, multimedia, interactivo, ilustraciones, retoque fotografico, fotografia, comunicacion, agencia de comunicacion, agencias de publicidad, publicidad promocion, master diseño web, diseño editorial, diseño digital, diseño industrial, diseño 3d, trade marketing, imagen corporativa, estudios diseño grafico, master diseño grafico, visual communications, stand, stands, estands, mkt, banner, baner, banners, baners">
-
+    <!-- fin metas -->
+    <!--stylesheet-->
     <link rel="stylesheet" href="normalize.css"></link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="../style.css"></link>
-    <link rel="icon" type="image/x-icon" href="assets/tangente_favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../style.css"></link>
+    <!--fin stylesheet-->
 </head>
 <body>
+    <!--header-->
     <header class="pershead">
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
@@ -55,13 +59,21 @@
             </div>
         </nav>      
     </header>
+    <!--fin header-->
+    
+    <!--boton up-->
     <div class="up">
         <a href="#"> 
             <i class="fa-sharp fa-solid fa-circle-up beige"></i>
         </a>
     </div>
-    <section id="cabezera">
-    </section>
+    <!--fin boton up-->
+
+    <!--cabezera-->
+    <section class="cabezera"></section>
+    <!--fin cabezera-->
+
+    <!--quienes somos-->
     <section id="quienesomos" class="sec">
         <h2 class="verde center">Quienes Somos</h2>
         <div class="row">
@@ -76,26 +88,31 @@
             </div>
         </div>
     </section>
+    <!--fin quienes somos-->
+
+    <!--personal-->
     <section class="sec container-fluid">
         <div class="row trio">
             <div class="perfil col-md-3">
-                <img class="retrato" src="../assets/tangente_estudio_design_equipo_partners_Gisela-Drezek">
+                <img data-aos="zoom-in-up" class="retrato" src="../assets/tangente_estudio_design_equipo_partners_Gisela-Drezek">
                 <h4 class="verde center">Gisella<br/>Drezek</h4>
                 <h6 class="beige center">Co-Fundadora</h6>
             </div>
             <div class="perfil col-md-3">
-                <img class="retrato" src="../assets/tangente_estudio_design_equipo_partners_Federico-Uliki">
+                <img data-aos="zoom-in-up" class="retrato" src="../assets/tangente_estudio_design_equipo_partners_Federico-Uliki">
                 <h4 class="verde center">Federico<br/>Uliki</h4>
                 <h6 class="beige center">Co-Fundador</h6>
             </div>
             <div class="perfil col-md-3">
-                <img class="retrato" src="../assets/tangente_estudio_design_equipo_partners_Ezequiel-Garcia">
+                <img data-aos="zoom-in-up" class="retrato" src="../assets/tangente_estudio_design_equipo_partners_Ezequiel-Garcia">
                 <h4 class="verde center">Ezequiel<br/>Garcia</h4>
                 <h6 class="beige center">Co-Fundador</h6>
             </div>
         </div>
     </section>
+    <!--fin personal-->
 
+    <!--footer-->
     <footer>
         <div class="container-fluid">
             <img src="../assets/tangente_estudio_dise&ntildeo_design_logo_marca_branding_small.png" alt="Estudio TanGente Logo Chico">
@@ -118,10 +135,13 @@
             </div>
         </div>    
     </footer>
+    <!--fin footer-->
+
+    <!--scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+    <script>new WOW().init();</script>
+    <script>AOS.init();</script>
+    <!--fin scripts-->
 </body>
 </html>

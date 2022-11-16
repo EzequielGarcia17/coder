@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*--Generales--*/
 $verde: #00A18F;
 $biege: #FFF8E1;
@@ -31,6 +31,7 @@ body{
     align-content: center;
     margin: 0 auto;
 }
+
 .sec{
     margin: 0 auto;
     width: auto;
@@ -38,6 +39,8 @@ body{
     justify-content: center;
     margin-bottom: 40px;
     margin-top: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .flex{
@@ -46,10 +49,7 @@ body{
 }
 /*--Fin-Generales--*/
 
-
 /*--Colores--*/
-
-
 .verde{
     color: $verde!important;
 }
@@ -61,6 +61,7 @@ body{
 .gris{
     color: $gris!important;
 }
+
 .violeta{
     color: $violeta!important;
 }
@@ -74,13 +75,14 @@ body{
 .left{
     text-align: left;
 }
+
 .right{
     text-align: right;
 }
+
 .center{
     text-align: center;
 }
-
 
 h2{
     font-size: 48px!important;
@@ -96,7 +98,6 @@ h3{
 h4{
     font-size: 20px!important;
     font-weight: 200!important;
-
 }
 
 h5{
@@ -138,13 +139,15 @@ h6{
     box-shadow: 0px 10px 10px $gris;
     transition: 300ms ease-in-out;
     background-color: $violeta;
+    color:$biege;
 }
 
 .button__violeta:hover{
     scale: 115%;
-    box-shadow: 0px 10px 10px $gris;
+    box-shadow: 0px 4px 4px $violeta;
     transition: 300ms ease-in-out;
-    background-color: $violeta;
+    background-color: $verde;
+    color:$biege;
 }
 
 i{
@@ -155,11 +158,7 @@ i:hover{
     transition: 300ms ease-in-out;
     color: $violeta;
 }
-
-
 /*--Fin-Botones--*/
-
-
 
 /*--header--*/
 .pershead{
@@ -200,7 +199,7 @@ nav{
     font-size: 30px;
 }
 
-#cabezera{
+.cabezera{
     height: 30vh;
     background-image: url(assets/tangente_estudio_dise&ntildeo_design_banckground_mis1.jpg);
     background-position: bottom;
@@ -212,39 +211,40 @@ nav{
 .navbar{
     max-width: 1600px;
 }
+/*--fin header--*/
+
 /*--footer--*/
 footer{
     background-color: $verde;
     align-items: center;
     padding: 16px 16px 16px 16px;
     box-shadow: 0px -10px 10px $violeta;
-
-        div{
-            display: flex;
-            flex-direction: row;
-            flex-flow: nowrap;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1600px;
-            
-                img{
-                    width: 45px;
-                }
+    div{
+        display: flex;
+        flex-direction: row;
+        flex-flow: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1600px;
+        img{
+            width: 45px;
         }
+    }
 }
 
 .social{
     gap: 4px;
     margin-right: 16px;
-        a{
-            text-decoration: none;
-        }
-        a:hover i{
-            box-shadow: 0px 6px 6px $gris;
-        }
+    a{
+        text-decoration: none;
+    }
+    a:hover i{
+        box-shadow: 0px 6px 6px $gris;
+    }
 }
 /*--fin-footer--*/
 
+/*--hero-*/
 #inicio{
     height:calc(100vh);
     background: url(assets/estudio_tangente_design_background_inicio.png);
@@ -260,9 +260,10 @@ footer{
     h3{
         width: 90%;
         margin-bottom: 16px;
-        text-shadow:2px 2px 4px $verde;
+        text-shadow:2px 2px 1px $gris;
     }
 }
+/*--fin-hero-*/
 
 /*--ultimos-trabajos-*/
 .portfolio_grid{
@@ -286,10 +287,10 @@ footer{
     transition: 400ms ease-in-out;
     transform: scale(105%);
 
-        .portfolio__text{
-            display:block;
-            opacity: 1;
-            transition: 400ms ease-in-out;
+    .portfolio__text{
+        display:block;
+        opacity: 1;
+        transition: 400ms ease-in-out;
     }
 }
 
@@ -301,7 +302,6 @@ footer{
     line-height: 50px;
     opacity: 0;
     transition: 100ms ease-in-out;
-
 }
 
 .newjobs9{
@@ -331,9 +331,7 @@ footer{
 .newjobs1 {
     background-image: url(assets/estudio_tangente_design_ultimos-trabajos_1.jpg);
 }
-
 /*--fin-ultimos-trabajos-*/
-
 
 /*--iconos-*/
 .icon{
@@ -350,10 +348,9 @@ footer{
     transform: scale(1.2);
 }
 
-
 .icon__verde{
     background-color: $verde;
-    color: $biege;
+    color:$biege;
 }
 
 .icon__beige{
@@ -366,15 +363,19 @@ footer{
     color:$violeta;
 }
 
-
-.icon_field h6{
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.icon_field{
+    a{
+        text-decoration: none;
+        h6{
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
 }
+/*--fin iconos-*/
 
-/*--iconos-*/
-
+/*--final de pag-*/
 .casillas{
     width: 100%;
     background-color: #818180;
@@ -408,6 +409,7 @@ form{
 .enviar{
     float: right;
     margin: 0px;
+    line-height: 22px;
 }
 
 .c2{
@@ -465,7 +467,7 @@ form{
     background-repeat: no-repeat;
     background-size: 100%;
 }
-/*--fin-iconos-*/
+/*--fin final de pag-*/
 
 /*--card--*/
 .card{
@@ -474,7 +476,7 @@ form{
     max-width: 346px;
     height: auto;
     display: grid!important;
-    grid-template-columns: 66px 180px;
+    grid-template-columns: 66px auto;
     grid-template-rows: 0.4fr 1fr 0.1fr;
     grid-template-areas: 
     "logoCliente empresa"
@@ -491,7 +493,6 @@ form{
         color: $biege;
         align-self: center;
         margin-left: 16px;
-    
     }
     h5{
         grid-area: nombre;
@@ -518,26 +519,25 @@ form{
         margin-bottom: 8px;
     }
 }
-
 /*--fin_card--*/
 
 /*--quienesomos--*/
 #quienesomos{
     margin-bottom: 80px;
     width: 90%;
-        h2{
-            margin-bottom: 60px;
-        }
-        div img{
-            box-shadow: -16px 16px 0px $verde;
-            width: 60%;
-            max-width: 500px;
-            height:max-content;
-            padding: 0px;
-            margin-left: 32px;
-            margin-top: 16px;
-            float: right;
-        }
+    h2{
+        margin-bottom: 60px;
+    }
+    div img{
+        box-shadow: -16px 16px 0px $verde;
+        width: 60%;
+        max-width: 500px;
+        height:max-content;
+        padding: 0px;
+        margin-left: 32px;
+        margin-top: 16px;
+        float: right;
+    }
 }
 
 #textoquienes{
@@ -548,6 +548,7 @@ form{
     padding-bottom: 80px;
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     width: 100%;
@@ -561,38 +562,41 @@ form{
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
-        h4{
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        h6{
-            margin-top: 10px;
-            margin-bottom: 10px;
-            max-width: 240px;
-        }
-        img{
-            width: 100%;
-            height:auto;
-            max-width: 300px;
-            max-height: 300px;
-            margin-bottom: 10px;
-            border-radius: 100%;
-            display: inline-block;
-        }
-}  
-
+    h4{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h6{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-width: 240px;
+    }
+    img{
+        width: 100%;
+        height:auto;
+        max-width: 300px;
+        max-height: 300px;
+        margin-bottom: 10px;
+        border-radius: 100%;
+        display: inline-block;
+    }
+}
 /*--fin quienesomos--*/
 
 /*--servicios--*/
-
-#cuadro div{
-    background-color: $violeta;
-    border-radius: 24px;
-    padding: 20px;
+#cuadro {
+    margin-left: 24px;
+    div{
+        background-color: $violeta;
+        border-radius: 24px;
+        padding: 20px;
         h3{
             margin-bottom: 18px;
             padding-left: 20px;
+            display: inline;
+            width: 100%;
         }
+    }
 }
 
 #otros{
@@ -603,7 +607,19 @@ justify-content: space-between;
 }
 
 .icon-serv{
-    width: 50%;
+    margin-bottom: 16px;
+    i {
+        display: inline-block;
+        margin-left: 4px;
+        font-size: 40px;
+        line-height: 65px;
+        height: 65px;
+        width: 65px;
+    }
+    h6{
+        display: inline-block;
+        margin-left: 16px;
+    }
 }
 /*--fin-servicios--*/
 
@@ -621,6 +637,7 @@ justify-content: space-between;
     margin-bottom: 48px;
     margin-top: -160px;
 }
+
 .corto{
     width: 60%;
     margin: 0 auto;
@@ -638,8 +655,12 @@ justify-content: space-between;
     background-size: cover;
     background-position: center;
 }
+
 .noline{
     text-decoration: none;
+}
+#botonesfin{
+    margin-bottom: 80px;
 }
 /*--fin-contacto--*/
 
@@ -648,11 +669,11 @@ justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-        img{
-            width: calc(50% - 20px);
-            height: auto;
-            margin: 10px;
-        }
+    img{
+        width: calc(50% - 20px);
+        height: auto;
+        margin: 10px;
+    }
 }
 
 .filtros{
@@ -663,30 +684,31 @@ justify-content: space-between;
     align-content: center;
     flex-basis: content;
     margin-top: 100px;
-        a{
-            i{
-                margin-bottom: 16px;
-                font-size: 30px;
-                width: 60px;
-                height: 60px;
-                line-height: 60px;
-                margin-left: 0px;
-            }
-            h4{
-                transition: 300ms ease-in-out;
-                text-align: center;
-            }
+    a{
+        i{
+            margin-bottom: 16px;
+            font-size: 30px;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            margin-left: 0px;
         }
-        a:hover{
-            i{
-                transform: scale(1.2);
-            }
-            h4{
-                transform: scale(1.1);
-                transition: 300ms ease-in-out;
-            }
+        h4{
+            transition: 300ms ease-in-out;
+            text-align: center;
         }
+    }
+    a:hover{
+        i{
+            transform: scale(1.2);
+        }
+        h4{
+            transform: scale(1.1);
+            transition: 300ms ease-in-out;
+        }
+    }
 }
+
 .marcadores{
     width: 50%;
     display: flex;
@@ -697,6 +719,7 @@ justify-content: space-between;
     text-decoration: none;
     margin-bottom: 24px;
 }
+
 .titulo_port{
     display: flex;
     flex-direction: row;
@@ -706,11 +729,12 @@ justify-content: space-between;
     padding: 10px 20px 10px 20px;
     border-radius: 16px;
     margin-bottom: 16px;
-        h3{
-            margin: 0px;
-            margin-left: 20px;
-        }
+    h3{
+        margin: 0px;
+        margin-left: 20px;
+    }
 }
+
 .port_space{
     padding-top: 60px;
 }
@@ -727,12 +751,13 @@ justify-content: space-between;
     bottom: 0;
     padding-bottom: 32px;
 }
+
 .carousel-inner{
     border-radius: 16px;
 }
-
 /*--fin portfolio--*/
 
+/*--@queries--*/
 @media screen and (min-width:480px) {
 
     .cierre__fondo{
@@ -750,16 +775,13 @@ justify-content: space-between;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 400px);
     }
-
     .c2{
         width: calc(50% - 32px);
     }
-
     .cierre article{
         flex-direction: row;
         gap: 16px;
     }
-    
     #final{
         flex-direction: column;
         height: 520px;
@@ -769,11 +791,14 @@ justify-content: space-between;
     }
     .icon-serv{
         width: 33%;
-    }         
-    
+    }    
+    .perfil{
+        width: 30%;
+    }     
 }
 
 @media screen and (max-width:720px) {
+
     #botonesfin{
         flex-direction: column;
         align-items: center;
@@ -800,15 +825,22 @@ justify-content: space-between;
 }
 
 @media screen and (max-width:1140px) {
+    #formulariocontacto{
+        width: 100%;
+    }
     #contacto{
         max-height: 600px;
         width: 100%;
         margin-left: 0px;
         margin-right: 16px;
     }
+    #otros div{
+        width: 50%;
+    }
 }
 
 @media screen and (min-width:1140px) {
+    
     .marcadores{
         width: auto;
     }
@@ -816,3 +848,4 @@ justify-content: space-between;
         width: calc(25% - 20px);
     }
 }
+/*--fin- @queries--*/
